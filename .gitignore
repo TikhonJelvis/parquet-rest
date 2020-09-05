@@ -1,2 +1,8 @@
 # Emacs
 *~
+
+# Rust
+/target
+
+# Nix
+result
