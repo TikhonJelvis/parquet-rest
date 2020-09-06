@@ -1,6 +1,6 @@
 { sources ? import ./sources.nix
 , channel ? "nightly"
-, date ? "2020-09-04"
+, date ? "2020-08-27"
 , targets ? []
 }:
 let
@@ -9,5 +9,8 @@ let
       (import sources.mozilla-overlay)
     ];
   };
+  rustChannel = pkgs.rustChannelOfTargets channel date targets;
 in
-pkgs.rustChannelOfTargets channel date targets
+rustChannel.override {
+  extensions = [ "rust-src" "rustfmt-preview" ];
+}

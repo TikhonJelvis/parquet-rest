@@ -6,5 +6,6 @@ in
 pkgs.mkShell {
   buildInputs = [
     rust
+    pkgs.rustracer
   ];
 }
