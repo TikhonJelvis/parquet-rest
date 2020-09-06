@@ -9,3 +9,4 @@ edition = "2018"
 
 [dependencies]
 rocket = "0.4.5"
+parquet = "1.0.1"
