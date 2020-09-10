@@ -8,4 +8,6 @@ pkgs.mkShell {
     rust
     pkgs.rustracer
   ];
+
+  RUST_SRC_PATH = "${rust}/lib/rustlib/src/rust/src";
 }
