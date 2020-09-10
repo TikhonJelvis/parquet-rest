@@ -1,5 +1,5 @@
 { sources ? import ./sources.nix
-, channel ? "stable"
+, channel ? "nightly"
 , date ? "2020-08-27"
 , targets ? []
 }:
